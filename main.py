@@ -1,10 +1,10 @@
 Temp1= float(input("Enter temperature:"))
  
-unit = input("Enter unit F/f or C/c: ")
+unit =input("Enter unit in F/f or C/c: ")
 
-tempc = float(Temp1*9.0/5.0+32.0)
+tempc = float(Temp1*5.0/9.0-32.0)
 
-tempf = float(Temp1*5.0/9.0-32.0)
+tempf = float(Temp1*9.0/5.0+32.0)
 
 g = chr(176)
 
@@ -12,5 +12,5 @@ if unit == 'F' or unit == 'f' : result = print(f"{Temp1} in Fahrenheit is equiva
 
 elif unit == 'C' or unit == 'c' : print(f"{Temp1} in Celsius is equivalent to {tempf} Fahrenheit.")
 
-else: print (f"invalid unit ({unit}).")
+else: print (f"Invalid unit ({unit}).")
 
